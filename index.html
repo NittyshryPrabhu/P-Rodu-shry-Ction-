@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿 Shry Production</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #141414;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #e50914;
+        }
+
+        .search-bar {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .search-bar button {
+            margin-left: 5px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #e50914;
+            color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: url('https://www.dfstudio.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .categories {
+            padding: 20px;
+        }
+
+        .categories h2 {
+            margin-bottom: 20px;
+        }
+
+        .categories .row {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .categories .row .card {
+            min-width: 180px;
+            margin-right: 15px;
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .categories .row .card img {
+            width: 100%;
+        }
+
+        .categories .row .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            background-color: #101010;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .nav {
+                flex-direction: column;
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .categories .row {
+                flex-wrap: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🌿 Shry Production</div>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="About.html">About</a>
+        <a href="#card">Movies</a>
+        <a href="#Team">Our Team</a>
+        
+    </nav>
+    <div class="search-bar">
+        <!-- <input type="text" placeholder="Search for a movie...">
+        <button>Search</button> -->
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Shry Production</h1>
+    <p>Discover your favorite movies and TV Shows.</p>
+   <a href="#card"> <button>Explore Now</button></a>
+</section>
+
+<section class="categories">
+    <h2>Trending Movies</h2>
+   <a href="Movies.html"> <div class="row">
+        <div id="card" class="card"> 
+            <img style="height: 180px; width: 180px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvs2oM4S7WJzL29f-wA5NIL0Cc5sCF_2Ssi8PEqb5glUVdzbSJ_S-ajHc2X2L9UjobvBmR9DELaze7G2K4zEHG5th0D5LrImog0FDg6V1nLo8McTGtyKF34kKJFNadaHJ_yQ0JbJZp2xL-SnGUClAiAGOYvK_2W4YyVRrqmTFz9SfRUY9CQ17cyeN28REk/s320/Gemini_Generated_Image_udripludripludr%201.JPG" alt="Movie Poster">
+        </div>
+        <div class="card">
+            <img  style="height: 180px; width: 180px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjchcKOvrrRY2IIEzMcMnZEWfPp31aaf8fZDI7hSnHHm0F4bdykhyphenhyphen7sulsDMC7oMOQGdesluajf93L7vEOKegGIVzE4JaEQLCKR7jmEgef28duYcXDYzSWZWwszE2x6gR02shVzgUAfpXjifRfJx3s_oyzVK6jlUAawrNNHtTNemkrClgxD8q5hBZqeh80g/s320/myasfbkndbgdahfgkbdgjbadjghbhdfa-removebg-preview.png" alt="Movie Poster">
+        </div>
+        <div class="card">
+            <img style="height: 180px; width: 180px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB0YwL9tV1GnKPbfEFls_5Cvdc3biLECousSkog5gtK6mt_a_cM9qsPzXNU-bxsNCYBqVYXqm9E-liCLhyphenhyphenZ8CVQj5vjapm3GA8ROqp81ueMnLC1VUCZz-muo0xwxrZKWgajdX41oX0UDy7rsu2VemBRUjANgJl61a_e-NQSbkKBmkFAK_WoV2ExnRbQ-ln/s1600/two-lovers-couple-man-woman-260nw-559103020.PNG" alt="Movie Poster">
+        </div>
+        <div class="card">
+            <img style="height: 180px; width: 180px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYP-1guGphSKvTqRpR3QGEimfH6g6Dltyd-RzRDvqx_cPJNykZs15ZBi_NioWFe03mflI5P82X6fKmybri1yFvpK0l4ccvw_-7hD7CWb9Iapmf1-a8fvrBi9cHhQXUr9KylOz7iWLWpRz_LdTw2cNIAe7oUnH3qTOaGgdLI004jbQjkjMOyd-DU7VDjFr4/s320/three%20young%20girls%20thinking%20deeply%20in%20Indian%20attire.png" alt="Movie Poster">
+        </div>
+    </div></a>
+</section>
+
+<section class="categories">
+    <h2>Our Team</h2>
+    <div id="Team" class="row">
+        <div class="card">
+          <p>  <img style="height: 252px; width: 180px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlTWrX1bnJ9w_oyWLQwxg0ZYMmMzRKIUSE-jSdM11LcPMKc1sRwdmvoad-YsaCiqdnaMcR10uLueHbjAt7UnwIzyD0idlZteGKPTd6w3XVHF9YhBoCtpeDm1AlLJ2PGbWcfyxyOdsFth6xvELPeKafWV1Mj6dcGDHV2F3qvcoITTlUpx1E97Mnvv1M-1E/s320/1735058791987.jpg" alt="TV Show Poster">
+            <br> <b>SonyShry</b>
+                
+          </p>
+             
+        </div>
+        <!-- <div class="card">
+            <img src="https://via.placeholder.com/180" alt="TV Show Poster"> 
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/180" alt="TV Show Poster">
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/180" alt="TV Show Poster">
+        </div> -->
+    </div>
+</section>
+
+<style>
+.info{
+     margin-left: 20px;
+     display: flex;
+     gap: 7px;
+     
+}
+.info a{
+    color: white;
+}
+
+</style>
+<section class="info">
+   
+   <div>
+      <p>
+        <a style="text-decoration: none;" href="#">Home</a> <br>
+        <a style="text-decoration: none;" href="About.html">About</a> <br>
+        <a  style="text-decoration: none;" href="#card">Movies</a> <br>
+        <a style="text-decoration: none;" href="#Team">Our Team</a> <br>
+
+ 
+
+      </p>
+    </div>
+    <hr>
+  
+     <div id="Contact">
+       
+        <h3>Contact Details</h3>
+        
+        Email : ShryProduction@gmail.com <br>
+        Phone : +91 xxxxxxxxxx <br>
+        Address : Bihar ,India ( 8532xx)
+
+
+     </div>
+</section>
+
+<footer>
+    <p>Shry Production &copy; 2024 | All rights reserved</p>
+</footer>
+
+<script>
+    document.querySelector('button').addEventListener('click', () => {
+        alert('You want to Explore Shry Production . Thank You !');
+    });
+</script>
+
+</body>
+</html>
